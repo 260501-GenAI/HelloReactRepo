@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import { FirstComponent } from './Components/FirstComponent'
 import { Dashboard } from './Components/Dashboard'
+import { Login } from './Components/Login'
 
 function App() {
 
@@ -29,10 +30,10 @@ function App() {
         -The "element", which is the component to render at that URL endpoint*/}
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Login/>}></Route>
           <Route path="/dashboard" element={<Dashboard/>}></Route>
         </Routes>
       </BrowserRouter>
-
 
     </>
   )
