@@ -1,5 +1,7 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import { FirstComponent } from './Components/FirstComponent'
+import { Dashboard } from './Components/Dashboard'
 
 function App() {
 
@@ -18,6 +20,17 @@ function App() {
       <p>Check out this custom component: </p>
 
       <FirstComponent/>
+
+      {/* ROUTING - how we DYNAMICALLY render components 
+      Routing is URL-based. The components that get rendered are determined by the /URL on the browser
+      
+      TODO: more notes*/}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard/>}></Route>
+        </Routes>
+      </BrowserRouter>
+
 
     </>
   )
