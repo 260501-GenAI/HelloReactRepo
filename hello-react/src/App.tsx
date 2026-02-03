@@ -1,4 +1,5 @@
 import './App.css'
+import { FirstComponent } from './Components/FirstComponent'
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
 
       <p>Check out this custom component: </p>
 
-      
+      <FirstComponent/>
 
     </>
   )
