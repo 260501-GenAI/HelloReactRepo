@@ -24,7 +24,9 @@ function App() {
       {/* ROUTING - how we DYNAMICALLY render components 
       Routing is URL-based. The components that get rendered are determined by the /URL on the browser
       
-      TODO: more notes*/}
+      To define a route, we need:
+        -The "path", which is the URL endpoint that shows a particular components
+        -The "element", which is the component to render at that URL endpoint*/}
       <BrowserRouter>
         <Routes>
           <Route path="/dashboard" element={<Dashboard/>}></Route>
